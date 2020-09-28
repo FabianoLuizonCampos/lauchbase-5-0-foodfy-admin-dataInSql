@@ -1,0 +1,97 @@
+main {
+
+    margin-top: 55px;
+
+}
+
+.card{
+    margin: 0 15vw;
+}
+
+.card .header .title-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card .header .title-content h1 {
+    font-size: 24px;
+}
+
+.card .header .title-content button {
+    justify-self: right;
+
+    text-decoration: none;
+
+    padding: 8px 16px;
+
+    background: var(--color-background-main-slogan);
+    color: var(--color-text-slogan);
+
+    border-radius: 4px;
+
+    width: 160px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card .details {
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.card .details .item div:nth-child(1) {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card .details .item div:nth-child(2),
+.ingredient,
+.preparation {
+    margin-top: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    height: 50px;
+
+    margin-bottom: 10px;
+
+    align-content: center;
+}
+
+a {
+    margin-top: 15px;
+    font-size: 16px;
+    color: blue;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.card .details .item input {
+    font-size: 24px;   
+    height: 100%;
+    width: 100%;
+}
+
+.card .details .item select {
+    font-size: 24px;   
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    height: 256px;
+}
+
+.card .details .item .info textarea {
+    font-size: 24px;   
+    height: 256px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+
+    margin-bottom: 50px;
+}
+
+

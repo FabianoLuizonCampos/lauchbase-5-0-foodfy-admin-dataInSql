@@ -1,0 +1,170 @@
+#page-ad_recipe-detail {
+    margin-bottom: 100px;
+}
+
+#page-ad_recipe-detail .card-recipe {
+    margin: 50px 15vw 0;    
+}
+
+#page-ad_recipe-detail .card-type {  
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+#page-ad_recipe-detail .card-type h1{
+    font-size: 24px;   
+    display: inline-block; 
+}
+
+#page-ad_recipe-detail .card-type a {
+
+    justify-self: right;
+
+    text-decoration: none;
+
+    padding: 8px 16px;
+
+    background: var(--color-background-main-slogan);
+    color: var(--color-text-slogan);
+
+    border-radius: 4px;
+
+    width: 136px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#page-ad_recipe-detail .card-image img {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 15px;
+
+    max-height: 281px;
+
+}
+
+#page-ad_recipe-detail .card-title { 
+    text-align: center;
+    margin-top: 50px;
+}
+
+#page-ad_recipe-detail .card-title h1 { 
+    font-size: 36px;
+    color: #111111;
+}
+
+#page-ad_recipe-detail .card-title p { 
+    font-size: 20px;
+    color: #777777;
+}
+
+#page-ad_recipe-detail .card-ingredients {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-ad_recipe-detail .card-ingredients .card-remove {
+    display: inline-block;
+}
+
+#page-ad_recipe-detail .card-ingredients .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-ad_recipe-detail .card-ingredients .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-ad_recipe-detail .card-ingredients #card-text-ingredients li {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+#page-ad_recipe-detail .card-preparation {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-ad_recipe-detail .card-preparation .card-remove {
+    display: inline-block;    
+}
+
+#page-ad_recipe-detail .card-preparation .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-ad_recipe-detail .card-preparation .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-ad_recipe-detail .card-preparation p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+#page-ad_recipe-detail .card-information {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-ad_recipe-detail .card-information .card-remove {
+    display: inline-block;
+}
+
+#page-ad_recipe-detail .card-information .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-ad_recipe-detail .card-information .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-ad_recipe-detail .card-information p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+
+    text-align: justify;
+}
+
+
+/* ----------- HIDE ------------*/
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}

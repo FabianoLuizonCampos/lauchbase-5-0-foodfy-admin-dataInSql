@@ -1,0 +1,47 @@
+.menu {    
+    margin: 16px 15vw;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+  
+    align-items:  center;    
+}
+
+.menu .links {
+    display: inline-block;
+    
+    padding: 16px;   
+}
+
+.menu .links a {
+    margin-left: 32px;
+
+    color: var(--color-text-headers);
+}
+
+.menu .findby {
+    margin-left: auto;
+}
+
+.menu .findby input {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+
+    padding: 8px
+}
+
+.menu .findby button {
+    padding: 8px 16px;
+
+    background: var(--color-background-main-slogan);
+    color: var(--color-text-slogan);
+
+    border-radius: 4px;    
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+}

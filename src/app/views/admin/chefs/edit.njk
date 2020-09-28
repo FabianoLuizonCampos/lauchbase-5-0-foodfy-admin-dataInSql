@@ -1,0 +1,61 @@
+{% extends "user/layout.njk" %}
+
+{% set pageId = "page-chefs-edit" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/admin/header.css">   
+    <link rel="stylesheet" href="/styles/chefs/edit.css"> 
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "admin/partials/page-header.njk" %} 
+
+    <!-- CONTENT -->    
+    <main>
+               
+
+        <form action="" method="POST" class="card">
+            
+            <section class="header">
+
+                <div class="title-content">
+                    <h1>Editando Chef</h1>
+                    <div class="title-button">
+                        <button class="selectMethodChef" id="put" type="submit">Atualizar</button>  
+                        <button class="selectMethodChef" id="delete" type="submit">Excluir</button> 
+                    </div>
+                </div> 
+
+            </section>
+              
+            <section class="details">
+
+              {% include "admin/chefs/fields.njk" %}   
+                
+            </section>
+
+        </form> 
+
+        
+
+    </main>
+
+
+    <!-- FOOTER -->
+    
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+    <script src="/scripts/selectMethodChef.js"></script>
+{% endblock scripts %} 
+
+
+

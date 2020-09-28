@@ -1,0 +1,25 @@
+{
+  "name": "5_0_foodfy_admin_dataInSql",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon src/server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/views'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "nunjucks": "^3.2.2",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "description": "<h1 align=\"center\">\r     <img height=150px src=\"foto-logo.png\">\r </h1>",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

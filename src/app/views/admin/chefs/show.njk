@@ -1,0 +1,66 @@
+{% extends "user/layout.njk" %}
+
+{% set pageId = "page-chefs-show" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/admin/header.css">   
+    <link rel="stylesheet" href="/styles/chefs/show.css"> 
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "admin/partials/page-header.njk" %} 
+
+    <!-- CONTENT -->    
+    <main>
+       
+        <div class="title-text">
+            <h1>Chef: {{chef.name}}</h1>
+            <a href="/admin/chefs/{{chef.id}}/edit">Editar Chef</a>
+        </div>      
+
+        <div class="chef-info">
+            <img src="{{chef.avatar_url}}" alt="">
+            <h2>{{chef.name}}</h2>
+            <p>{{totalReceitas}} receitas</p>
+        </div>  
+
+        <div class="cards-space">
+              <!-- Card n -->
+            {% for recipe in recipes %}
+            
+                <div class="card">
+
+                    <div class="card-image">
+                        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                    </div>
+
+                    <div class="card-text">
+                        <h2>{{recipe.title}}</h2>
+                        <p>por {{chef.name}}</p>
+                        <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                    </div>  
+                        
+                </div>
+           
+            {% endfor %}  
+        </div> 
+
+    </main>
+
+    <!-- FOOTER -->
+    
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+{% endblock scripts %} 
+
+
+

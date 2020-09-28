@@ -1,0 +1,60 @@
+{% extends "user/layout.njk" %}
+
+{% set pageId = "page-ad_recipes-index" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/admin/header.css">   
+    <link rel="stylesheet" href="/styles/admin/index.css"> 
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "admin/partials/page-header.njk" %} 
+
+    <!-- CONTENT -->    
+    <main>
+       
+        <div class="text-cards">
+            <h1>Gerenciar Receitas</h1>
+            <a href="/admin/recipes/create">Nova Receita</a>
+        </div>        
+
+        <div class="cards-space">
+              <!-- Card n -->
+            {% for item in items %}
+            
+                <div class="card">
+
+                    <div class="card-image">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                    </div>
+
+                    <div class="card-text">
+                        <h2>{{item.title}}</h2>
+                        <p>por {{item.author}}</p>
+                        <a href="/admin/recipes/{{item.id}}">Visualizar</a>
+                    </div>  
+                        
+                </div>
+           
+            {% endfor %}  
+        </div> 
+
+    </main>
+
+    <!-- FOOTER -->
+    
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+{% endblock scripts %} 
+
+
+

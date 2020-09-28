@@ -1,0 +1,59 @@
+{% extends "user/layout.njk" %}
+
+{% set pageId = "page-findby" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/findby.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    
+    <div class="title">
+        <h1>Buscando por: {{filter}}</h1>
+    </div>
+
+    <div class="cards-recipes">
+
+        {% for item in items %}
+         <!-- Card n -->
+            <div class="card">
+                <a href="/recipe-detail/{{item.id}}">
+                    <div class="card-image">
+                        <img src="{{item.image}}" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>{{item.title}}</h2>
+                        <p>por {{item.author}}</p>
+                    </div>   
+                </a>         
+            </div>  
+        {% endfor %}
+
+    </div>
+
+    <div class="pagination"
+            data-page={{pagination.page}}
+            data-total={{pagination.total}} 
+            data-filter={{filter}}   
+    ></div>
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+    <script src="/scripts/paginatePages.js"></script>
+{% endblock scripts %} 

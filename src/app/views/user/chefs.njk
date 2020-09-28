@@ -1,0 +1,61 @@
+{% extends "user/layout.njk" %}
+
+{% set pageId = "page-chefs" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/chefs.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}    
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->    
+    <main>
+       
+       <!-- 
+        <div class="text-cards">
+            <h1>Chefs</h1>
+        </div>  
+        -->      
+
+        <div class="cards-space">
+              <!-- Card n -->
+            {% for item in items %}
+            
+                <div class="card">
+
+                    <div class="card-image">
+                        <img src="{{item.avatar_url}}" alt="{{item.author}}">
+                    </div>
+
+                    <div class="card-text">
+                        <h2>{{item.author}}</h2>
+                        <p>{{item.totalrecipes}} receitas</p>
+                    </div>  
+                        
+                </div>
+           
+            {% endfor %}  
+        </div> 
+
+    </main>
+
+    <!-- FOOTER -->
+    
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+{% endblock scripts %} 
+
+
+
